@@ -1,0 +1,542 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 2, 2016, 8:31:47 PM
+    Author     : YMCD
+*/
+/*     index */
+body {
+    background: url('BinRunner/../pic/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.top-header1{
+    width: 100%;
+    max-width: 960px;
+    font:8em "SEGA LOGO FONT", cursive;
+    color: white;
+    text-shadow:5px 5px 0 rgga(0,0,0,.2);
+    margin: 40px auto ;
+    text-align: center;     
+}
+.top-header2{
+    width: 100%;
+    max-width: 960px;
+    font:6em ;
+    color: white;
+    text-shadow:5px 5px 0 rgga(0,0,0,.2);
+    margin: 40px auto ;
+    text-align: center;     
+}
+
+#submit:not([text="text"]) {
+ left: 5%;
+ right: 5%;
+ width: 100%;
+ height: 30px;
+ background: whitesmoke;
+ border: none;
+ padding: 1px 1px;
+ margin-bottom: 3px;
+ 
+}
+
+.button {
+ display: block;
+  left: 5%;
+ right: 5%;
+ width: 100%;
+ background: #ffffff;
+ border: 2px solid rgba(33, 68, 72, 0.59);
+  color: rgba(0, 0, 0, 0.55);
+ text-align: center;
+ font: bold 1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  background: linear-gradient(top, #34696f, #2f5f63);
+ border-radius: 50px;
+}
+
+.header1{
+        color: darkblue;
+	font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 25px;
+        text-align: center;
+}
+
+@media (max-width: 767) {
+    /* your custom css class on a parent will increase specificity */
+    /* so this rule will override Bootstrap's font size setting */
+    .top-header1 { font-size: 2em; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .top-header1  { font-size: 4em; }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .top-header1  { font-size: 8em; }
+}
+
+@media (min-width: 1200px) {
+    .top-header1  { font-size: 10em; }
+}  
+    
+    
+    .loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+.login-help{
+  font-size: 12px;
+}
+/* index 
+    navbar */
+
+
+
+.top-header3{
+    width: 100%;
+    max-width: 960px;
+    font:8em "SEGA LOGO FONT", cursive;
+    color: white;
+    text-shadow:0px 0px 0 rgga(0,0,0,.2);
+    margin: 40px auto ;
+    text-align: center;     
+}
+@media (max-width: 767) {
+    /* your custom css class on a parent will increase specificity */
+    /* so this rule will override Bootstrap's font size setting */
+    .top-header3 { font-size: 1.5em; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .top-header3  { font-size: 3em; }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .top-header3  { font-size: 4.5em; }
+}
+
+@media (min-width: 1200px) {
+    .top-header3  { font-size: 5em; }
+}  
+  
+
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #000;  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: whitesmoke; /*BACKGROUND color for active*/
+background-color:rgba(255, 255, 255, .4);
+}
+
+  .navbar-default {
+    background-color: #0f006f;
+    background-color:rgba(255, 255, 255, .4);
+}
+
+  .dropdown-menu > li > a:hover,
+   .dropdown-menu > li > a:focus {
+    color: #262626;
+   text-decoration: none;
+  background-color: #66CCFF;  /*change color of links in drop down here*/
+   }
+
+ .nav > li > a:hover,
+ .nav > li > a:focus {
+    text-decoration: none;
+    background-color: silver; /*Change rollover cell color here*/
+  }
+
+
+  .navbar-default .navbar-nav > li > a {
+   color: white; /*Change active text color here*/
+    }
+    
+ /* navbar 
+    About */ 
+    
+    
+#AboutBox{
+    
+position: relative;
+
+    top:5px;
+ 
+  left: 5%;
+  height: 70%;
+  width: 90%; 
+  background-color:rgba(255, 255, 255, .7);
+   border: 5px solid white; 
+ 
+   bottom: 5%;
+   overflow: scroll;
+
+   
+   
+}
+#AboutBoxIn{
+    padding: 2.5% 2.5%;
+    margin: auto;  
+}
+
+ /* about 
+    footer */ 
+
+
+
+#footer {
+    
+ 
+    bottom: 00%;
+    bottom: 00px;
+ 
+    left: 20%;
+ right:20%;
+  width: 60%;
+ 
+  height:auto;
+  background-color: white;
+  text-align: center;
+ 
+  background-color:rgba(255, 255, 255, .7);
+  border: 5px solid white; 
+
+  position: relative;
+}
+#share-buttons img {
+width: 36px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
+
+
+ /* footer 
+    srtting */
+  #TestBox1out{
+    
+position: relative;
+
+    top:0px;
+ 
+  left: 2%;
+  
+  height: 70%;
+  width: 96%; 
+  background-color:rgba(255, 255, 255, .7);
+   border: 5px solid white; 
+ 
+   bottom: 10%;
+   
+
+   
+   
+}
+#TestBoxTop{    
+position: relative;
+top: 5%;
+left: 0%;
+  left: 2%;
+  height: auto;
+  width: 96%; 
+
+   border: 2px solid white; 
+   background-color:rgba(255, 255, 255, .7);
+ 
+  
+   
+
+   
+   
+}
+
+
+
+ #TestBox1{
+    
+position: absolute;
+height: 100%;
+   bottom: 00%;
+ 
+  left: 0%;
+  
+  
+  width: 50%; 
+
+   border: 2px solid white; 
+ 
+   
+   overflow: scroll;
+
+   
+   
+}
+#TestBox2{
+    
+position: absolute;
+height: 100%;
+   bottom: 00%;
+ 
+  left:50%;
+  
+  
+  width: 50%; 
+
+   border: 2px solid white; 
+ 
+   
+   overflow: scroll;
+
+   
+   
+}
+#testBoxIn{
+    padding: 2.5% 2.5%;
+    margin: auto;  
+}
+ 
+
+.top-header4{
+        color: darkblue;
+	font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+	
+	font-style: normal;
+	font-variant: normal;
+	
+	line-height: 15px;
+        text-align: center;
+}
+ 
+p.ex1 {
+    padding: 0.2cm;
+}
+
+ /* srtting 
+    contatc */
+
+ 
+  #conBox1{
+    
+position: relative;
+height: 60%;
+ left: 25%;
+width: 50%; 
+   border: 2px solid white; 
+   background-color:rgba(255, 255, 255, .7);
+   padding: 5%;
+   
+}
+
+textarea
+{
+  width:70%;
+  height: 50%;
+   overflow: scroll;
+  
+}
+.textwrapper
+{
+  border:1px solid #999999;
+  margin:5px 0;
+  padding:3px;
+}
+
+/*       
+contatc
+jobs */
+
+#jobsBoxTop{    
+position: relative;
+top: 5px;
+
+  left: 5%;
+  height: auto;
+  width: 90%; 
+
+   border: 5px solid white; 
+   background-color:rgba(255, 255, 255, .7);
+ 
+  
+   
+
+   
+   
+}
+
+
+
+
+#jobsBox{
+    
+position: relative;
+
+    top:5px;
+ 
+  left: 5%;
+  height: 70%;
+  width: 90%; 
+  background-color:rgba(255, 255, 255, .7);
+   border: 5px solid white; 
+ 
+   bottom: 5%;
+   overflow: scroll;
+
+   
+   
+}
+#jobsBoxIn{
+    padding: 2.5% 2.5%;
+    margin: auto;  
+}
+#jobsBoxIn2{
+    
+    position: absolute;
+    top: 00%;
+    height: 100%;
+    bottom: 00%;
+    left: 0%;
+    width: 20%; 
+    border: 2px solid white; 
+    overflow: scroll;
+}
+
+#jobsBoxIn3{
+    top: 0%;
+    position: absolute;
+    height: 100%;
+    bottom: 00%;
+    left: 20%;
+    width: 80%; 
+    border: 2px solid white; 
+    overflow: scroll;
+}
+
+
+/* 
+jobs
+maps   */
+
+#mapBox{
+    
+position: relative;
+
+    top:5px;
+ 
+  left: 5%;
+  height: 70%;
+  width: 90%; 
+  background-color:rgba(255, 255, 255, .7);
+   border: 5px solid white; 
+ 
+   bottom: 5%;
+   overflow: scroll;
+
+   
+   
+}
+
+ 
+
+
